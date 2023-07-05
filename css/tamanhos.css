@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 480px) {
+    header div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 290px;
+    }
+    #redes {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    header div {
+        width: 360px;
+        flex-wrap: nowrap;
+    }
+    #foto {
+        width: 250px;
+        height: 250px;
+        margin: 30px 20px 20px;
+    }
+    #redes img {
+        margin: 15px;
+    }
+    #desc_pessoal {
+        max-width: 70%;
+    }
+    .projeto {
+        width: 60vw;
+        height: 60vh;
+    }
+    .mostra {
+        height: calc(60vh + 220px);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    header div {
+        width: 360px;
+        flex-wrap: wrap;
+    }
+    #redes {
+        flex-direction: row;
+    }
+    #desc_pessoal {
+        width: 50vw;
+        margin: 0 20px;
+    }
+    .desc_projeto {
+        overflow: visible;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
+}

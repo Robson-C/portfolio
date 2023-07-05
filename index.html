@@ -3,40 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tamanhos.css">
     <title>Portfólio</title>
 </head>
-<body>
+<body onresize="size_window()" onload="size_window()">
     <header>
-        <img src="imagens/trocar.png" id="foto" alt="Foto de Robson Colaço">
-        <section id="redes">
-            <img src="imagens/trocar.png" alt="Link Facebook">
-            <img src="imagens/trocar.png" alt="Link Linkdin">
-            <img src="imagens/trocar.png" alt="Link Git Hub">
-        </section>
-        <section id="desc-pessoal">
-            <h1>Desenvolvedor Front-End</h1>
+        <div>
+            <img src="imagens/trocar.png" id="foto" alt="Foto de Robson Colaço">
+            <section id="redes">
+                <img src="imagens/trocar.png" alt="Link Facebook">
+                <img src="imagens/trocar.png" alt="Link Linkdin">
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+            </section>
+        </div>
+        <section id="desc_pessoal">
+            <h2>Desenvolvedor Front-End</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid nam commodi facere facilis atque excepturi odio nihil exercitationem? Ratione sunt delectus nisi eius eligendi ipsum aperiam quo placeat commodi provident.</p>
         </section>
     </header>
 
     <main>
-        <h2>Projetos</h1>
+        <h2>Projetos</h2>
+
         <section id="projetos">
-            <section class="projeto">
 
+            <section class="projeto" id="proj_1" onclick="mostrar(1)">
+                <h3>Nome do projeto 1</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Aqui vai a descrição do projeto</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
             </section>
-            <section class="projeto">
 
+            <section class="projeto" id="proj_2" onclick="mostrar(2)">
+                <h3>Nome do projeto 2</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut beatae quae ipsa unde quaerat. Quia sunt impedit minus, ducimus culpa ex consectetur qui sit corrupti quam, aperiam nihil quis tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, reprehenderit eligendi debitis non aperiam magni assumenda incidunt quidem laudantium, similique blanditiis tempora nihil perspiciatis pariatur. Ipsum eos cupiditate accusamus id.</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
             </section>
-            <section class="projeto">
 
+            <section class="projeto" id="proj_3" onclick="mostrar(3)">
+                <h3>Nome do projeto 3</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Aqui vai a descrição do projeto</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
             </section>
-            <section class="projeto">
 
+            <section class="projeto" id="proj_4" onclick="mostrar(4)">
+                <h3>Nome do projeto 4</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Aqui vai a descrição do projeto</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
+            </section>
+
+            <section class="projeto" id="proj_5" onclick="mostrar(5)">
+                <h3>Nome do projeto 5</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Aqui vai a descrição do projeto</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
+            </section>
+
+            <section class="projeto" id="proj_6" onclick="mostrar(6)">
+                <h3>Nome do projeto 6</h3>
+                <img src="imagens/trocar.png" alt="Link Git Hub">
+                <div class="desc_projeto">
+                    <p>Aqui vai a descrição do projeto</p>
+                    <a href="#" target="_blank">Acessar</a>
+                </div>
             </section>
 
         </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
